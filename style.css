@@ -75,6 +75,7 @@ nav ul li a:hover::after {
 }
 
 .logo {
+  z-index: 2;
   position: fixed;
   left: 6vw;
   font-weight: bold;
