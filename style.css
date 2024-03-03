@@ -297,7 +297,10 @@ nav ul li a:hover::after {
 
   .title{
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 3rem;
+  }
+  .title p{
+    margin-bottom: 10px;
   }
 
   .card{
