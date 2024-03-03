@@ -307,4 +307,8 @@ nav ul li a:hover::after {
     width: 280px;
     height: 496px;
     left: 0;}
+
+    .homebase{
+      display: none;
+    }
 }
