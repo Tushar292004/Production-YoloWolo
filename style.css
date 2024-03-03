@@ -28,6 +28,8 @@ body {
 }
 
 nav {
+  background-color: #fff;
+  /* position: fixed; */
   z-index: 2;
   display: flex;
   width: 100%;
@@ -314,5 +316,9 @@ nav ul li a:hover::after {
 
     #loader h1{
       font-size: 2rem;
+    }
+
+    nav ul{
+      padding-right: 2vw;
     }
 }
