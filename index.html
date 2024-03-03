@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YoloWolo</title>
     <!-- icons -->
-    <!--favicon-->
-    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <!-- gsap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
@@ -18,9 +16,9 @@
 
 <body>
     <div id="loader">
-        <h1>CIVIC</h1>
-        <h1>HYGIEN</h1>
-        <h1>PUBLIC SERVICE</h1>
+        <h1 class="loader-h1">CIVIC</h1>
+        <h1 class="loader-h1">HYGIEN</h1>
+        <h1 class="loader-h1">PUBLIC SERVICE</h1>
     </div>
 
     <div class="wrapper">
@@ -32,21 +30,15 @@
             <!-- navbar============== -->
             <nav>
                 <div class="logo">
-                    <!-- <img src="logo.png" alt=""> -->
-                    <span>YOLOWOLO</span>
+                    <span class="logo-text">YOLOWOLO</span>
                 </div>
-                <ul>
+                <ul class="menu-list">
                     <li><a href="">Home</a></li>
                     <li><a href="">Services</a></li>
                     <li><a href="">Motives</a></li>
                     <li><a href="">Contact</a></li>
+                    <i class="menu fa fa-bars mobile-nav-toggle" onclick="toggleMenu()"></i>
                 </ul>
-                <!-- <div class="search">
-                    <i class="fa fa-search"></i>
-                </div>
-                <div class="menu">
-                    <i class="fa fa-bars"></i>
-                </div> -->
             </nav>
 
             <!-- home-content -->
@@ -70,7 +62,7 @@
                 </div>
             </div>
 
-            <!-- <div class="homebase">
+            <div class="homebase">
                 <div class="media">
                     <ul>
                         <li><i class="fa fa-facebook"></i></li>
@@ -78,7 +70,7 @@
                         <li><i class="fa fa-twitter"></i></li>
                     </ul>
                 </div>
-            </div> -->
+            </div>
         </div>
 
 

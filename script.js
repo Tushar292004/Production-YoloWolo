@@ -91,3 +91,9 @@ function loaderAnimation() {
 }
 
 loaderAnimation();
+
+
+function toggleMenu() {
+  var menu = document.querySelector('nav ul.menu');
+  menu.classList.toggle('active');
+}
