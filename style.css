@@ -312,7 +312,7 @@ nav ul li a:hover::after {
       display: none;
     }
 
-    #loader{
-      font-size: 4rem;
+    #loader h1{
+      font-size: 2rem;
     }
 }
