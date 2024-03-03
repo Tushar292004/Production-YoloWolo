@@ -275,6 +275,25 @@ nav ul li a:hover::after {
   height: 100vh;
 }
 
+.sidebar{
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  height: 100vh;
+  width: 180px;
+  background-color: #ffffff90;
+  backdrop-filter:  blur(4px);
+  box-shadow: -10 0 10 rgba(0, 0, 0, 0.15);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+
 @media (max-width: 900px) {
 
   .line-one{
@@ -288,11 +307,17 @@ nav ul li a:hover::after {
   }
 
   .menu {
+    cursor: pointer;
+    font-size: 18px;
     margin: 10px 30px;
     display: block;
-        top: 0.5%;
+    top: 0.5%;
     right: 0%;
     position: fixed;
+  }
+
+  .close {
+    font-size: 18px;
   }
 
   .home {

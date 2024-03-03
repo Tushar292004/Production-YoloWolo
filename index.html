@@ -28,16 +28,24 @@
                 <div class="line-two"></div>
             </div>
             <!-- navbar============== -->
-            <nav>
+            <nav class="navbar">
                 <div class="logo">
                     <span class="logo-text">YOLOWOLO</span>
                 </div>
+                <ul class="sidebar">
+                    <li><i  onclick=hideSideBar() class="close fa fa-arrow-circle-o-right" aria-hidden="true"></i></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Motives</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+
                 <ul class="menu-list">
                     <li><a href="">Home</a></li>
                     <li><a href="">Services</a></li>
                     <li><a href="">Motives</a></li>
                     <li><a href="">Contact</a></li>
-                    <i class="menu fa fa-bars mobile-nav-toggle" onclick="toggleMenu()"></i>
+                    <i onclick=showSideBar() class="menu fa fa-bars mobile-nav-toggle" ><a href=""></a></i>
                 </ul>
             </nav>
 
