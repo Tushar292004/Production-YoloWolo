@@ -311,4 +311,8 @@ nav ul li a:hover::after {
     .homebase{
       display: none;
     }
+
+    #loader{
+      font-size: 4rem;
+    }
 }
