@@ -26,6 +26,7 @@ body {
   background: #1e02d6;
   left: 25%;
 }
+
 .menu-list {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -133,26 +134,27 @@ nav ul li a:hover::after {
 }
 
 .title p {
+  line-height: 1;
   font-size: 25px;
-  font-weight: 300;
+  font-weight: 500;
   color: grey;
   text-transform: uppercase;
   left: 150px;
   letter-spacing: 10px;
 }
 
-.home-offer{
+.home-offer {
   margin-top: 1rem;
   display: flex;
 }
 
-.offers{
+.offers {
   padding: 2px;
   margin-top: 1rem;
   margin-right: 1rem;
   text-align: center;
   border-radius: 15px;
-  background-color:#FCF3BF ;
+  background-color: #FCF3BF;
 }
 
 
@@ -301,24 +303,78 @@ nav ul li a:hover::after {
   justify-content: center;
 }
 
-.about-content{
+.about-content {
+  padding-top: 2rem;
   width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .about-title {
-  margin-top: 5vh;
   z-index: 2;
   font-size: 4rem;
   font-weight: 700;
 }
 
-.about-para{
+.about-para {
+  padding: 15px;
+  border-radius: 15px;
+  background-color: #FCF3BF;
   color: #5d5656;
   font-size: 20px;
+  width: 80%;
+}
+
+.about-img {
+  filter: drop-shadow(2px 4px 10px black);
+  width: 30%;
+}
+
+.about-1 {
+  height: 50vh;
+  display: flex;
+  margin: 0 10vw 4vh 10vw;
+  justify-content: space-around;
+}
+
+
+.left-about-container {
+  display: flex;
+  padding: 0 13px;
+  border-radius: 15px;
+  background-color: #FCF3BF;
   width: 50%;
 }
+
+.left-content {
+  width: 42%;
+}
+
+.left-img {
+  margin: 10px;
+  width: 55%;
+  background-color: #fff;
+}
+
+.right-about-container {
+  display: flex;
+  padding: 0 13px;
+  border-radius: 15px;
+  background-color: #FCF3BF;
+  width: 40%;
+}
+
+.right-content {
+  width: 42%;
+}
+
+.right-img {
+  margin: 10px;
+  width: 55%;
+  background-color: #fff;
+}
+
 .sidebar {
   border-left: #ff3131 solid 2px;
   padding: 0;
@@ -337,20 +393,24 @@ nav ul li a:hover::after {
   align-items: flex-start;
   justify-content: flex-start;
   transform: translateX(100%);
-  transition: transform 0.5s ease; /* Add transition for smooth animation */
+  transition: transform 0.5s ease;
+  /* Add transition for smooth animation */
 }
 
 .sidebar.visible {
   visibility: visible;
-  transform: translateX(0); /* Move the sidebar into view */
+  transform: translateX(0);
+  /* Move the sidebar into view */
 }
 
 @media (max-width: 900px) {
   .line-one {
+    height: 1002px;
     left: 48%;
   }
 
   .line-two {
+    height: 1002px;
     left: 50%;
   }
 
@@ -361,7 +421,8 @@ nav ul li a:hover::after {
   .navbar {
     height: 4vh;
   }
-  .menu-list > li {
+
+  .menu-list>li {
     display: none;
   }
 
@@ -383,7 +444,7 @@ nav ul li a:hover::after {
     padding-top: 10vh;
     justify-content: flex-start;
     margin: 0;
-    height: 100vh;
+    height: 935px;
     flex-direction: column;
     align-items: center;
   }
@@ -409,11 +470,11 @@ nav ul li a:hover::after {
     left: 0;
   }
 
-  .home-offer{
+  .home-offer {
     flex-direction: column;
   }
 
-  .offers{
+  .offers {
     margin: 4px;
     padding: 4px;
   }
@@ -438,30 +499,70 @@ nav ul li a:hover::after {
     padding: 10px 30px;
   }
 
-  .about-content{
+  .about {
+    height: 835px;
+  }
+
+  .about-content {
     margin-left: 0;
   }
-  .about-title{
-    margin-top: 10vh;
+
+  .about-title {
+    margin-top: 2vh;
     text-align: center;
     font-size: 3rem;
     line-height: 0.8;
   }
-  .about-para{
+
+  .about-para {
     text-align: center;
     width: 100%;
   }
-}
 
-@media (max-width: 700px){
-  .line-one {
-    height: 145vh;
+  .about-img {
+    margin-top: 4vh;
+    width: 85%;
   }
 
-  .line-two {
-    height: 145vh;
+  .about-1 {
+    height: 968px;
+    margin: 0 0 4vh 0;
+    flex-direction: column;
+    align-items: center;
   }
-  .home{
-    height: 135vh;
+
+  .left-about-container {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-content {
+    width: 90%;
+  }
+
+  .left-img {
+    border-radius: 15px;
+    margin-top: 20px;
+    width: 90vw;
+    height: 30vh;
+  }
+
+  .right-about-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2vh;
+    width: 90%;
+  }
+
+  .right-content {
+    width: 90%;
+  }
+
+  .right-img {
+    border-radius: 15px;
+    margin-top: 20px;
+    width: 90vw;
+    height: 30vh;
   }
 }
