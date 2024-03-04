@@ -14,7 +14,7 @@ body {
 .line-one {
   position: absolute;
   width: 15px;
-  height: 85vh;
+  height: 100vh;
   background: #ff3131;
   left: 23%;
 }
@@ -22,7 +22,7 @@ body {
 .line-two {
   position: absolute;
   width: 25px;
-  height: 85vh;
+  height: 100vh;
   background: #1e02d6;
   left: 25%;
 }
@@ -105,7 +105,7 @@ nav ul li a:hover::after {
 
 .home {
   backdrop-filter: blur(4px);
-  height: 85vh;
+  height: 100vh;
   align-items: center;
   /* margin-top: 5vh; */
   display: flex;
@@ -176,11 +176,7 @@ nav ul li a:hover::after {
   transition: transform 0.5s;
 }
 
-.card:hover .card__inner {
-  transform: rotateY(180deg);
-}
-
-.card:active .card__inner {
+.flipped {
   transform: rotateY(180deg);
 }
 

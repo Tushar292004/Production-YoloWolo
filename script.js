@@ -113,3 +113,14 @@ function hideSideBar() {
     sidebar.style.visibility = 'hidden';
   }, 500);
 }
+
+// Get the card element
+const card = document.querySelector('.card__inner');
+
+// Function to toggle the 'flipped' class
+function flipCard() {
+  card.classList.toggle('flipped');
+}
+
+// Automatically flip the card every 2 seconds
+setInterval(flipCard, 2000);
