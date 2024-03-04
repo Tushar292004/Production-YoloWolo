@@ -92,14 +92,16 @@ function loaderAnimation() {
 
 loaderAnimation();
 
-
 function showSideBar() {
-  const sidebar = document.querySelector('.sidebar')
-  sidebar.style.display = 'flex'
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.classList.add('visible');
+  sidebar.style.visibility = 'visible';
 }
 
-function hideSideBar(){
-  const sidebar = document.querySelector('.sidebar')
-  sidebar.style.display = 'none'
+function hideSideBar() {
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.classList.remove('visible');
+  setTimeout(() => {
+    sidebar.style.visibility = 'hidden';
+  }, 500); 
 }
-

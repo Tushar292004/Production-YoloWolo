@@ -292,11 +292,19 @@ nav ul li a:hover::after {
   background-color: #ffffff90;
   backdrop-filter: blur(4px);
   box-shadow: -10 0 10 rgba(0, 0, 0, 0.15);
-  display: none;
+  visibility: hidden;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  transform: translateX(100%);
+  transition: transform 0.5s ease; /* Add transition for smooth animation */
 }
+
+.sidebar.visible {
+  visibility: visible;
+  transform: translateX(0); /* Move the sidebar into view */
+}
+
 
 @media (max-width: 900px) {
 
