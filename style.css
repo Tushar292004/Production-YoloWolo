@@ -405,12 +405,12 @@ nav ul li a:hover::after {
 
 @media (max-width: 900px) {
   .line-one {
-    height: 1002px;
+    height: 1026px;
     left: 48%;
   }
 
   .line-two {
-    height: 1002px;
+    height: 1026px;
     left: 50%;
   }
 
