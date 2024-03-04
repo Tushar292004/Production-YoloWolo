@@ -1,0 +1,15 @@
+Website text : 
+
+loader :
+CIVIC
+HYIGENE
+PUBLIC SERVICE
+
+NAVBAR:
+YOLOWOLO
+
+navbar li:
+Home 
+Service
+Motives
+Contact
