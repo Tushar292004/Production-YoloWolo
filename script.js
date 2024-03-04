@@ -49,6 +49,13 @@ function loaderAnimation() {
       ease: Expo.easeInOut,
     });
 
+    TweenMax.from(".offers", 1, {
+      opacity: 0,
+      delay: 1,
+      y: 20,
+      ease: Expo.easeInOut,
+    });
+
     TweenMax.from(".btn", 1, {
       opacity: 0,
       delay: 1.6,

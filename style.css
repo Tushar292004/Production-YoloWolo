@@ -141,8 +141,23 @@ nav ul li a:hover::after {
   letter-spacing: 10px;
 }
 
+.home-offer{
+  margin-top: 1rem;
+  display: flex;
+}
+
+.offers{
+  padding: 2px;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  text-align: center;
+  border-radius: 15px;
+  background-color:#FCF3BF ;
+}
+
+
 .btn {
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
 }
 
 .btn a {
@@ -392,6 +407,15 @@ nav ul li a:hover::after {
     width: 280px;
     height: 496px;
     left: 0;
+  }
+
+  .home-offer{
+    flex-direction: column;
+  }
+
+  .offers{
+    margin: 4px;
+    padding: 4px;
   }
 
   .homebase {
