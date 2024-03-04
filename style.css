@@ -455,13 +455,13 @@ nav ul li a:hover::after {
 
 @media (max-width: 700px){
   .line-one {
-    height: 130vh;
+    height: 135vh;
   }
 
   .line-two {
-    height: 130vh;
+    height: 145vh;
   }
   .home{
-    height: 130vh;
+    height: 145vh;
   }
 }
