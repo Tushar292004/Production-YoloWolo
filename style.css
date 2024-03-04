@@ -114,6 +114,7 @@ nav ul li a:hover::after {
 
 
 .home-content {
+  backdrop-filter: blur(2px);
   width: 50%;
   position: relative;
   /* top: -8%; */
@@ -177,6 +178,10 @@ nav ul li a:hover::after {
 }
 
 .card:hover .card__inner {
+  transform: rotateY(180deg);
+}
+
+.card:active .card__inner {
   transform: rotateY(180deg);
 }
 
@@ -338,8 +343,8 @@ nav ul li a:hover::after {
   }
 
   .close {
-    font-size: 18px;
-  }
+    font-size: 20px;
+}
 
   .home {
     padding-top: 10vh;

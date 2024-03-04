@@ -1,3 +1,28 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const card = document.querySelector(".card.img");
+  let isFlipped = false;
+
+  // Add click event listener to the card
+  card.addEventListener("click", function () {
+      const frontSide = this.querySelector(".card__body--front");
+      const backSide = this.querySelector(".card__body--back");
+
+      // Toggle between front and back sides
+      if (isFlipped) {
+          // If currently flipped to back side, show front side
+          frontSide.style.display = "block";
+          backSide.style.display = "none";
+      } else {
+          // If currently showing front side, flip to back side
+          frontSide.style.display = "none";
+          backSide.style.display = "block";
+      }
+
+      // Toggle the flipped state
+      isFlipped = !isFlipped;
+  });
+});
+
 function loaderAnimation() {
   var loader = document.querySelector("#loader");
   setTimeout(function () {
