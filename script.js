@@ -1,27 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const card = document.querySelector(".card.img");
-  let isFlipped = false;
-
-  // Add click event listener to the card
-  card.addEventListener("click", function () {
-      const frontSide = this.querySelector(".card__body--front");
-      const backSide = this.querySelector(".card__body--back");
-
-      // Toggle between front and back sides
-      if (isFlipped) {
-          // If currently flipped to back side, show front side
-          frontSide.style.display = "block";
-          backSide.style.display = "none";
-      } else {
-          // If currently showing front side, flip to back side
-          frontSide.style.display = "none";
-          backSide.style.display = "block";
-      }
-
-      // Toggle the flipped state
-      isFlipped = !isFlipped;
-  });
-});
 
 function loaderAnimation() {
   var loader = document.querySelector("#loader");
@@ -35,6 +11,12 @@ function loaderAnimation() {
       ease: Expo.easeInOut,
     });
 
+    TweenMax.from("nav", 1, {
+      borderBottomWidth: "0px",
+      ease: Expo.easeInOut,
+      delay: 0.5, 
+    });
+
     TweenMax.staggerFrom(
       "nav ul li",
       1,
@@ -43,7 +25,7 @@ function loaderAnimation() {
         x: -20,
         ease: Power3.easeInOut,
       },
-      0.08
+      0.10
     );
 
     TweenMax.from(".search", 1, {
@@ -112,6 +94,7 @@ function loaderAnimation() {
       },
       0.2
     );
+
   }, 4200); // Adjust this timeout duration according to your loader animation's duration
 }
 
@@ -128,5 +111,5 @@ function hideSideBar() {
   sidebar.classList.remove('visible');
   setTimeout(() => {
     sidebar.style.visibility = 'hidden';
-  }, 500); 
+  }, 500);
 }
