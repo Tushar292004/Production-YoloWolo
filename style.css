@@ -312,7 +312,7 @@ nav ul li a:hover::after {
 
 /* about page  */
 .about {
-  margin-bottom: 5vh;
+  margin-bottom: 10vh;
   /* background-color: #ff313180; */
   /* backdrop-filter: blur(4px); */
   z-index: 2;
@@ -358,7 +358,6 @@ nav ul li a:hover::after {
 
 .left-about-container {
   align-items: center;
-  height: 70vh;
   display: flex;
   padding: 0 50px;
   border-radius: 15px;
@@ -389,7 +388,6 @@ nav ul li a:hover::after {
 
 .right-about-container {
   align-items: center;
-  height: 70vh;
   padding: 0 13px;
   border-radius: 15px;
   background-color: #fcf3bf;
@@ -449,6 +447,8 @@ nav ul li a:hover::after {
 .about-3 {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about-3-content {
@@ -464,7 +464,7 @@ nav ul li a:hover::after {
 }
 
 .about-3-text>h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 400;
   margin: 5px;
 }
@@ -489,23 +489,94 @@ nav ul li a:hover::after {
 }
 
 .icon-text>h1 {
+  line-height: 1;
   font-weight: 400;
   font-size: 20px;
 }
 
 .icon-text>p {
   color: #5d5656;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .icon-svg {
-  width: 10vw;
-  height: 10vw;
+  width: 8vw;
+  height: 8vw;
 }
 
 .about-3-content:hover {
   background-color: #fcf3bf;
 }
+
+.left-2{
+  display: flex;
+}
+
+.right-2{
+  display: flex;
+}
+
+
+.left-2-content{
+  padding: 0 15px 15px;
+  border-radius: 15px;
+  background-color: #fcf3bf;
+  width: 40%;
+  display: flex;
+  transition: all .3s ease-in-out !important;
+}
+
+.left-2-content:hover{
+  background-color: #ff313159;
+}
+
+.right-2-content{
+  padding: 8px 15px 15px;
+  border-radius: 15px;
+  background-color: #fcf3bf;
+  width: 40%;
+  display: flex;
+  transition: all .3s ease-in-out !important; 
+}
+
+.right-2-content:hover{
+  background-color: #1e02d64d;
+}
+.about-3-content-2{
+  margin-bottom: 4vh;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.left-2-text{
+  margin: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.left-2-text>h1{
+  line-height: 1;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.right-2-text{
+  margin: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-2-text>h1{
+  line-height: 1;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
 .sidebar {
   border-left: #ff3131 solid 2px;
   padding: 0;
@@ -632,6 +703,7 @@ nav ul li a:hover::after {
 
   .about {
     align-items: stretch;
+    margin-bottom: 5vh
   }
 
   .about-content {
@@ -648,7 +720,7 @@ nav ul li a:hover::after {
   .about-para {
     font-size: 16px;
     text-align: center;
-    width: 100%;
+    width: 90%;
   }
 
   .about-img {
@@ -657,34 +729,37 @@ nav ul li a:hover::after {
   }
 
   .about-1 {
-    height: 100vh;
+    /* height: 100vh; */
     margin: 0 0 4vh 0;
     flex-direction: column;
     align-items: center;
   }
 
   .left-about-container {
-    width: 90%;
+    width: 80%;
     flex-direction: column;
     align-items: center;
+    padding: 0 15px;
+    margin-right: 0px;
   }
 
   .left-content {
+    padding-top: 10px;
     width: 90%;
   }
 
   .left-img {
     border-radius: 15px;
     margin-top: 20px;
-    width: 90vw;
-    height: 30vh;
+    /* width: 60vw;
+    height: 30vh; */
   }
 
   .right-about-container {
     flex-direction: column;
     align-items: center;
     margin-top: 2vh;
-    width: 90%;
+    width: 80%;
   }
 
   .right-content {
@@ -694,7 +769,63 @@ nav ul li a:hover::after {
   .right-img {
     border-radius: 15px;
     margin-top: 20px;
-    width: 90vw;
-    height: 30vh;
+    /* width: 90vw;
+    height: 30vh; */
   }
+
+  .left-content>h1 {
+    font-size: 2rem;
+  }
+
+  .right-content>h1 {
+    font-size: 2rem;
+  }
+
+  .about-2{
+    margin-bottom: 2vh;
+    flex-direction: column;
+  }
+  
+  .about-2-img>img{
+    width: 100%;
+  }
+  .about-2-content {
+    text-align: center;
+    width: 95%;
+    padding: 10px;
+}
+.about-3-content-2{
+  flex-direction: column;
+}
+.left-2-content{
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2vh;
+}
+.right-2-content{
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.about-3-content{
+  width: 80%;
+}
+.about-3-text>h1{
+  font-size: 2rem;
+}
+.about-3-icon{
+  flex-direction: column;
+  align-items: center;
+}
+.icon{
+  margin-right: 0;
+  width: 90%;
+}
+
+.icon-svg{
+  width: 35vw;
+    height: 35vw;
+}
 }
