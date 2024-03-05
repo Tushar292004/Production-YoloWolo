@@ -354,6 +354,9 @@ nav ul li a:hover::after {
   width: 55%;
   margin-right: 2vw;
 }
+.left-about-container:hover{
+  background-color: #02d6ba56;
+}
 
 .left-content {
   width: 42%;
@@ -381,6 +384,10 @@ nav ul li a:hover::after {
   border-radius: 15px;
   background-color: #fcf3bf;
   width: 25%;
+}
+
+.right-about-container:hover{
+  background-color: #024cd64e;
 }
 
 .right-content {
