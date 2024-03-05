@@ -14,7 +14,7 @@ function loaderAnimation() {
     TweenMax.from("nav", 1, {
       borderBottomWidth: "0px",
       ease: Expo.easeInOut,
-      delay: 0.5, 
+      delay: 0.5,
     });
 
     TweenMax.staggerFrom(
@@ -131,3 +131,5 @@ function flipCard() {
 
 // Automatically flip the card every 2 seconds
 setInterval(flipCard, 2000);
+
+

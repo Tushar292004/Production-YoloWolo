@@ -177,6 +177,25 @@ nav ul li a:hover::after {
   color: #fff;
 }
 
+.btn1 {
+  margin-top: 1.5rem;
+}
+
+.btn1 a {
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #ff3131;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: 0.4s;
+}
+
+.btn1 a:hover {
+  background: #000;
+  color: #fff;
+}
+
 /* cards */
 .card {
   position: relative;
@@ -338,6 +357,7 @@ nav ul li a:hover::after {
 }
 
 .left-about-container {
+  align-items: center;
   height: 70vh;
   display: flex;
   padding: 0 50px;
@@ -352,6 +372,8 @@ nav ul li a:hover::after {
 }
 
 .left-content>h1 {
+  margin: 10px;
+  line-height: 1;
   font-size: 3rem;
 }
 
@@ -366,6 +388,7 @@ nav ul li a:hover::after {
 }
 
 .right-about-container {
+  align-items: center;
   height: 70vh;
   padding: 0 13px;
   border-radius: 15px;
@@ -378,6 +401,8 @@ nav ul li a:hover::after {
 }
 
 .right-content>h1 {
+  margin: 10px;
+  line-height: 1;
   font-size: 3rem;
 }
 
@@ -392,6 +417,7 @@ nav ul li a:hover::after {
 }
 
 .about-2 {
+  align-items: center;
   display: flex;
   justify-content: center;
 }
