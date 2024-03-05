@@ -690,7 +690,7 @@ nav ul li a:hover::after {
     width: 100%;
     border-bottom: #1e02d6 solid 2px;
     margin: 0;
-    padding: 10px 30px;
+    padding: 10px 15px;
   }
 
   .about {
