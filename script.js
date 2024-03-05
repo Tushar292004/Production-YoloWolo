@@ -63,30 +63,10 @@ function loaderAnimation() {
       ease: Expo.easeInOut,
     });
 
-    TweenMax.from(".line-one", 1, {
-      opacity: 0,
-      delay: 2,
-      y: -800,
-      ease: Expo.easeInOut,
-    });
-    TweenMax.from(".line-two", 1, {
-      opacity: 0,
-      delay: 2.5,
-      y: -800,
-      ease: Expo.easeInOut,
-    });
-
     TweenMax.from(".img", 2, {
       opacity: 0,
-      delay: 2.9,
+      delay: 1.6,
       y: -800,
-      ease: Expo.easeInOut,
-    });
-
-    TweenMax.from(".year", 1, {
-      opacity: 0,
-      delay: 1.4,
-      y: -20,
       ease: Expo.easeInOut,
     });
 
