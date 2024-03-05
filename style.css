@@ -353,6 +353,7 @@ nav ul li a:hover::after {
   background-color: #fcf3bf;
   width: 55%;
   margin-right: 2vw;
+  transition: all .3s ease-in-out !important; 
 }
 .left-about-container:hover{
   background-color: #02d6ba56;
@@ -384,6 +385,7 @@ nav ul li a:hover::after {
   border-radius: 15px;
   background-color: #fcf3bf;
   width: 25%;
+  transition: all .3s ease-in-out !important; 
 }
 
 .right-about-container:hover{
@@ -453,6 +455,7 @@ nav ul li a:hover::after {
   margin: 4vw;
   width: 50%;
   background-color: #F3F3F3;
+  transition: all .3s ease-in-out !important; 
 }
 
 .about-3-text {
