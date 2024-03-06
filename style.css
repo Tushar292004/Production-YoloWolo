@@ -2,6 +2,7 @@
 
 html,
 body {
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -675,6 +676,7 @@ nav ul li a:hover::after {
   justify-content: space-evenly;
   align-items: flex-start;
   border-top: #1e02d6 solid 4px;
+  border-bottom: #1e02d6 solid 4px;
 }
 
 
@@ -765,6 +767,21 @@ nav ul li a:hover::after {
   color: #ff3131;
 }
 
+.designed{
+  text-decoration: none;
+  transition: all .3s ease-in-out !important;
+  color: #000;
+}
+
+.designed:hover{
+  color: #ff3131;
+}
+
+.credits{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 @media (max-width: 900px) {
 
   .logo span {
@@ -993,6 +1010,10 @@ nav ul li a:hover::after {
   }
 
   .footer{
-    
+    flex-direction: column;
   }
+  .foot4 {
+    margin-top: 2vh;
+    width: 95%;
+}
 }
