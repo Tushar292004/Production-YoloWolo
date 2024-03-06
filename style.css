@@ -1016,4 +1016,7 @@ nav ul li a:hover::after {
     margin-top: 2vh;
     width: 95%;
 }
+.foot1>p {
+  font-size: 20px;
+}
 }
