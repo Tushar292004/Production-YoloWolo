@@ -1019,4 +1019,9 @@ nav ul li a:hover::after {
 .foot1>p {
   font-size: 20px;
 }
+
+.foot4-h1-2{
+  margin-top: 4vh;
+}
+
 }
