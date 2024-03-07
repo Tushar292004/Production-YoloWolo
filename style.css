@@ -1200,4 +1200,9 @@ nav ul li a:hover::after {
   #nav-btn{
     display: none;
   }
+
+  #side-btn{
+    margin-top: 1.5rem !important;
+    margin-right: 48% !important; 
+  }
 }
