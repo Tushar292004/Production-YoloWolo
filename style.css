@@ -2,6 +2,7 @@
   font-family: myCustomFont;
   src: url(Ahmet\ Altun\ -\ Harman-Sans.otf);
 }
+
 html,
 body {
   scroll-behavior: smooth;
@@ -461,7 +462,7 @@ nav ul li a:hover::after {
 .about-3-content {
   border-radius: 20px;
   padding: 4vw;
-  margin: 4vw;
+  margin: 2vw;
   width: 50%;
   background-color: #fcf3bf;
   transition: all .3s ease-in-out !important;
@@ -573,7 +574,7 @@ nav ul li a:hover::after {
   font-weight: 500;
 }
 
-.left-2-text>p{
+.left-2-text>p {
   color: #5d5656;
 }
 
@@ -591,7 +592,7 @@ nav ul li a:hover::after {
   font-weight: 500;
 }
 
-.right-2-text>p{
+.right-2-text>p {
   color: #5d5656;
 }
 
@@ -788,31 +789,67 @@ nav ul li a:hover::after {
   color: #ff3131;
 }
 
-.foot4-h1-2{
+.foot4-h1-2 {
   font-weight: 400;
   margin-top: 4vh;
 }
 
-.btn2{
+.btn2 {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-.designed{
+.designed {
   text-decoration: none;
   transition: all .3s ease-in-out !important;
   color: #000;
 }
 
-.designed:hover{
+.designed:hover {
   color: #ff3131;
 }
 
-.credits{
+.credits {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+.partners {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 4vh;
+  background-color: #fcf3bf;
+  margin-bottom: 4vh;
+}
+
+.partners-title {
+  text-align: center;
+}
+
+.partners-title>h1 {
+  font-weight: 400;
+  margin: 0;
+}
+
+.partners-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.partners-icon>img{
+  margin-right: 5vw;
+}
+
+.part2{
+  width: 10%;
+}
+
+.part3{
+  width: 17%;
+}
+
 @media (max-width: 900px) {
 
   .logo span {
@@ -1040,20 +1077,43 @@ nav ul li a:hover::after {
     height: 35vw;
   }
 
-  .footer{
+  .footer {
     flex-direction: column;
   }
+
   .foot4 {
     margin-top: 2vh;
     width: 95%;
-}
-.foot4>a{
-  margin-right: 3vw ;
-}
+  }
 
-.foot1>p {
-  font-size: 20px;
-}
+  .foot4>a {
+    margin-right: 3vw;
+  }
 
+  .foot1>p {
+    font-size: 20px;
+  }
 
+  .partners-icon{
+    margin-top: 2vh;
+    flex-direction: column;
+  }
+
+  .partners-icon>img{
+    margin-right: 0;
+  }
+
+  .part1{
+    margin-bottom: 2vh;
+
+    width: 80%;
+  }
+
+  .part2{
+    width: 50%;
+  }
+  
+  .part3{
+    width: 80%;
+  }
 }
