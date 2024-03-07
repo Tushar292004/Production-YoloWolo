@@ -266,6 +266,7 @@ nav ul li a:hover::after {
 }
 
 #loader h1 {
+  font-weight: 400;
   font-size: 4vw;
   color: transparent;
   background: linear-gradient(to right, orange, orangered);
@@ -944,7 +945,7 @@ nav ul li a:hover::after {
 
   .left-content {
     padding-top: 10px;
-    width: 90%;
+    width: 95%;
   }
 
   .left-img {
