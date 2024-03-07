@@ -18,7 +18,7 @@ function loaderAnimation() {
     });
 
     TweenMax.staggerFrom(
-      "nav ul li",
+      ".menu-list>li",
       1,
       {
         opacity: 0,
@@ -56,6 +56,13 @@ function loaderAnimation() {
       ease: Expo.easeInOut,
     });
 
+    TweenMax.from("#nav-btn", 1, {
+      opacity: 0,
+      delay: 1.6,
+      y: 20,
+      ease: Expo.easeInOut,
+    });
+
     TweenMax.from(".btn", 1, {
       opacity: 0,
       delay: 1.6,
@@ -82,7 +89,7 @@ function loaderAnimation() {
       0.2
     );
 
-  }, 4200); // Adjust this timeout duration according to your loader animation's duration
+  }, 4200);
 }
 
 loaderAnimation();
@@ -101,15 +108,22 @@ function hideSideBar() {
   }, 500);
 }
 
-// Get the card element
-const card = document.querySelector('.card__inner');
 
-// Function to toggle the 'flipped' class
+const card = document.querySelector('.card__inner');
 function flipCard() {
   card.classList.toggle('flipped');
 }
-
-// Automatically flip the card every 2 seconds
 setInterval(flipCard, 2000);
 
+document.querySelector('.menu-list li:nth-child(3)').addEventListener('mouseenter', function() {
+  document.querySelector('.dropdown-container').classList.add('show');
+});
 
+document.querySelector('.menu-list li:nth-child(3)').addEventListener('mouseleave', function() {
+  document.querySelector('.dropdown-container').classList.remove('show');
+});
+
+document.querySelector('.dropdown-toggle-new').addEventListener('click', function() {
+  document.querySelector('.dropdown-new').classList.toggle('visible');
+  this.classList.toggle('open');
+});

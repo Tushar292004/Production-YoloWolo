@@ -41,7 +41,7 @@ nav {
 nav ul {
   flex: 1;
   text-align: right;
-  padding-right: 5vw;
+  padding-right: 4vw;
 }
 
 nav ul li {
@@ -74,6 +74,58 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
+/* dropdown */
+.dropdown-container {
+  z-index: 2;
+  border-radius: 10px;
+  /* border: #1e02d6 solid 4px; */
+  
+  position: absolute;
+  left: -20vw;
+}
+
+.dropdown {
+  background-color: #fcf3bf;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.dropdown-container.show {
+  display: block; 
+}
+
+.dropdown ul {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+
+.dropdown ul li {
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+}
+
+.dropdown ul li a {
+  color: #000;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.dropdown ul li a:hover {
+  background: #fffefeb4;
+}
+.menu-list:hover .dropdown {
+  max-height: 700px; 
+}
 .logo {
   z-index: 2;
   position: fixed;
@@ -154,6 +206,7 @@ nav ul li a:hover::after {
 .btn {
   margin-top: 1.5rem;
 }
+
 
 .btn a {
   font-size: 20px;
@@ -328,7 +381,6 @@ nav ul li a:hover::after {
 }
 
 .about-title {
-  z-index: 2;
   font-size: 4rem;
   font-weight: 500;
 }
@@ -616,13 +668,41 @@ nav ul li a:hover::after {
   transform: translateX(100%);
   transition: transform 0.5s ease;
   overflow-y: auto;
-  /* Add transition for smooth animation */
 }
 
 .sidebar.visible {
   visibility: visible;
   transform: translateX(0);
-  /* Move the sidebar into view */
+
+}
+
+.dropdown-new {
+  /* background-color: #fcf3bf; */
+  display: none;
+  border-left: #1e02d6 solid 2px;
+  border-top: #1e02d6 solid 2px;
+}
+.dropdown-new ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.dropdown-new ul li {
+  margin-bottom: 5px;
+}
+.dropdown-new.visible {
+  display: block;
+}
+.dropdown-toggle-new
+{
+  display: flex;
+}
+.fa.fa-chevron-down {
+  margin-left: 2vw;
+  transition: transform 0.3s ease;
+}
+.open .fa.fa-chevron-down {
+  transform: rotate(180deg);
 }
 
 .faq {
@@ -1115,5 +1195,9 @@ nav ul li a:hover::after {
   
   .part3{
     width: 80%;
+  }
+
+  #nav-btn{
+    display: none;
   }
 }
