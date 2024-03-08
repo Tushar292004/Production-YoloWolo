@@ -677,6 +677,7 @@ nav ul li a:hover::after {
 }
 
 .dropdown-new {
+  background-color: #fcf3bfab;
   margin-top: 10px;
   /* background-color: #fcf3bf; */
   width: 90%;
