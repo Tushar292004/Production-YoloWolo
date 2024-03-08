@@ -116,10 +116,12 @@ function flipCard() {
 setInterval(flipCard, 2000);
 
 document.querySelector('.menu-list li:nth-child(3)').addEventListener('mouseenter', function() {
+  console.log("visible");
   document.querySelector('.dropdown-container').classList.add('show');
 });
 
 document.querySelector('.menu-list li:nth-child(3)').addEventListener('mouseleave', function() {
+  console.log("not visible");
   document.querySelector('.dropdown-container').classList.remove('show');
 });
 

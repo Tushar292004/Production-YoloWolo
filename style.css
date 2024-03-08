@@ -123,7 +123,7 @@ nav ul li a:hover::after {
 .dropdown ul li a:hover {
   background: #fffefeb4;
 }
-.menu-list:hover .dropdown {
+.disable:hover .dropdown {
   max-height: 700px; 
 }
 .logo {
