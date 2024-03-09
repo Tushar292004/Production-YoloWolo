@@ -129,3 +129,24 @@ document.querySelector('.dropdown-toggle-new').addEventListener('click', functio
   document.querySelector('.dropdown-new').classList.toggle('visible');
   this.classList.toggle('open');
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const questions = document.querySelectorAll('.que');
+
+  questions.forEach(question => {
+      question.addEventListener('click', function() {
+          const answer = this.nextElementSibling;
+
+          // Toggle visibility of answer
+          if (answer.classList.contains('show')) {
+              answer.classList.remove('show');
+              answer.style.maxHeight = null;
+              this.querySelector('.fa-chevron-down').style.transform = 'rotate(0deg)';
+          } else {
+              answer.classList.add('show');
+              answer.style.maxHeight = answer.scrollHeight + "px";
+              this.querySelector('.fa-chevron-down').style.transform = 'rotate(180deg)';
+          }
+      });
+  });
+});

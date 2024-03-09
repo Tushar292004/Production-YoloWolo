@@ -79,7 +79,7 @@ nav ul li a:hover::after {
   z-index: 2;
   border-radius: 10px;
   /* border: #1e02d6 solid 4px; */
-  
+
   position: absolute;
   left: -20vw;
 }
@@ -95,7 +95,8 @@ nav ul li a:hover::after {
 }
 
 .dropdown-container.show {
-  display: block; 
+  display: block;
+  max-height: 100vh;
 }
 
 .dropdown ul {
@@ -109,7 +110,7 @@ nav ul li a:hover::after {
 
 .dropdown ul li {
   display: flex;
-    align-items: center;
+  align-items: center;
   margin: 0;
   padding: 5px;
   text-align: center;
@@ -125,9 +126,11 @@ nav ul li a:hover::after {
 .dropdown ul li a:hover {
   background: #fffefeb4;
 }
+
 .disable:hover .dropdown {
-  max-height: 700px; 
+  max-height: 700px;
 }
+
 .logo {
   z-index: 2;
   position: fixed;
@@ -568,7 +571,7 @@ nav ul li a:hover::after {
 }
 
 .about-3-content:hover {
-  background-color: #1e02d64b;
+  background-color: #02d66f4b;
 }
 
 .left-2 {
@@ -581,7 +584,7 @@ nav ul li a:hover::after {
 
 
 .left-2-content {
-  padding: 0 15px 15px;
+  padding: 8px 15px 15px;
   border-radius: 15px;
   background-color: #fcf3bf;
   width: 40%;
@@ -688,90 +691,34 @@ nav ul li a:hover::after {
   border-top: #1e02d6 solid 2px;
   border-right: #1e02d6 solid 2px;
 }
+
 .dropdown-new ul {
   width: 96%;
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 .dropdown-new ul li {
   padding: 15px 5px;
-  
+
 }
+
 .dropdown-new.visible {
   display: block;
 }
-.dropdown-toggle-new
-{
+
+.dropdown-toggle-new {
   display: flex;
 }
+
 .fa.fa-chevron-down {
   margin-left: 2vw;
   transition: transform 0.3s ease;
 }
+
 .open .fa.fa-chevron-down {
   transform: rotate(180deg);
-}
-
-.faq {
-  padding: 60px 0;
-}
-
-.faq .faq-list {
-  padding: 0;
-  list-style: none;
-}
-
-.faq .faq-list li {
-  border-bottom: 1px solid #eae7e5;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-}
-
-.faq .faq-list .question {
-  display: block;
-  position: relative;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 400;
-  font-weight: 600;
-  padding-left: 25px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.faq .faq-list i {
-  font-size: 16px;
-  position: absolute;
-  left: 0;
-  top: -2px;
-}
-
-.faq .faq-list p {
-  margin-bottom: 0;
-  padding: 10px 0 0 25px;
-}
-
-.faq .faq-list .icon-show {
-  display: none;
-}
-
-.faq .faq-list .collapsed {
-  color: #343a40;
-}
-
-.faq .faq-list .collapsed:hover {
-  color: #343a40;
-}
-
-.faq .faq-list .collapsed .icon-show {
-  display: inline-block;
-  transition: 0.6s;
-}
-
-.faq .faq-list .collapsed .icon-close {
-  display: none;
-  transition: 0.6s;
 }
 
 .footer {
@@ -926,16 +873,62 @@ nav ul li a:hover::after {
   justify-content: center;
   align-items: center;
 }
-.partners-icon>img{
+
+.partners-icon>img {
   margin-right: 5vw;
 }
 
-.part2{
+.part2 {
   width: 10%;
 }
 
-.part3{
+.part3 {
   width: 17%;
+}
+
+.yw-faq {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4vh;
+}
+
+.faq {
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #fcf3bf;
+  justify-content: center;
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.faq-title {
+  margin-top: 1vh;
+  font-weight: 400;
+}
+
+.ques-ans {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 15px;
+  margin-bottom: 1vh;
+}
+
+.que {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ans {
+  font-size: 18px;
+  color: #5d5656;
+  display: block;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  max-height: 0;
 }
 
 @media (max-width: 900px) {
@@ -1182,35 +1175,35 @@ nav ul li a:hover::after {
     font-size: 20px;
   }
 
-  .partners-icon{
+  .partners-icon {
     margin-top: 2vh;
     flex-direction: column;
   }
 
-  .partners-icon>img{
+  .partners-icon>img {
     margin-right: 0;
   }
 
-  .part1{
+  .part1 {
     margin-bottom: 2vh;
 
     width: 80%;
   }
 
-  .part2{
+  .part2 {
     width: 50%;
   }
-  
-  .part3{
+
+  .part3 {
     width: 80%;
   }
 
-  #nav-btn{
+  #nav-btn {
     display: none;
   }
 
-  #side-btn{
+  #side-btn {
     margin-top: 1.5rem !important;
-    margin-right: 48% !important; 
+    margin-right: 48% !important;
   }
 }
