@@ -191,7 +191,7 @@ nav ul li a:hover::after {
   color: grey;
   text-transform: uppercase;
   left: 150px;
-  letter-spacing: 10px;
+  letter-spacing: 8px;
 }
 
 .home-offer {
