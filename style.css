@@ -1206,4 +1206,15 @@ nav ul li a:hover::after {
     margin-top: 1.5rem !important;
     margin-right: 48% !important;
   }
+
+  .que{
+    font-size: 18px;
+  }
+
+  .ans{
+    font-size: 16px;
+  }
+  .faq{
+    width: 80%;}
+
 }
